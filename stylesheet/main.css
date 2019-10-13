@@ -370,6 +370,21 @@ input {
   outline: none;
 }
 
+@font-face {
+  font-family: "Akkurat-Mono";
+  src: url(../../font/AkkuratMono/Akkurat-Mono.otf);
+  src: url(../../font/AkkuratMono/AkkuratMono-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TitlingGothicFB";
+  src: url(../../font/TitlingGothicFB/TitlingGothicFBNor-Bold.otf);
+  font-weight: 700;
+  font-style: bold;
+}
+
 .container {
   max-width: 1180px;
   padding-left: 30px;
@@ -702,7 +717,7 @@ input {
 }
 
 .header-title .title {
-  font-family: "TitlingGothicFb Normal", sans-serif;
+  font-family: "TitlingGothicFB", sans-serif;
   font-size: 25px;
   margin-bottom: 10px;
 }
@@ -1868,7 +1883,7 @@ ion-icon {
 }
 
 .popup-section .head-title {
-  font-family: "TitlingGothicFb Normal", sans-serif;
+  font-family: "TitlingGothicFB", sans-serif;
 }
 
 .popup-section .head-subtitle {
@@ -2046,7 +2061,7 @@ ion-icon {
 .article .title {
   display: inline-block;
   font-size: 24px;
-  font-family: "TitlingGothicFb Normal", sans-serif;
+  font-family: "TitlingGothicFB", sans-serif;
   font-weight: bold;
   max-width: 240px;
 }
@@ -2218,7 +2233,7 @@ ion-icon {
 }
 
 .modal-title {
-  font-family: "TitlingGothicFb Normal", sans-serif;
+  font-family: "TitlingGothicFB", sans-serif;
   font-size: 30px;
   line-height: 1.1;
   color: #242424;
@@ -2294,7 +2309,7 @@ ion-icon {
 }
 
 .article-container .article-title {
-  font-family: "TitlingGothicFb Normal", sans-serif;
+  font-family: "TitlingGothicFB", sans-serif;
   text-align: center;
 }
 
