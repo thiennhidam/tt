@@ -91,14 +91,14 @@
         }
     }
 }
-@media (min-width: $mobile){
+@media (min-width: $desktop){
     .modal-content {
         width: 55%;
         min-width: 400px;
         max-width: 650px;
     }
 }
-@media (max-width: $mobile){
+@media (max-width: $tablet){
     .modal-content {
         width: 95%;
     }
