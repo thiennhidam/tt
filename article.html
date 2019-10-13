@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="NHIDTT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Trends Article</title>
+    <link href="asset/img/logo.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet/main.css" />
+</head>
+
+<body>
+    <header class="header border">
+        <div class="category-trigger">
+            <span class="hamburger-menu"></span>
+            <span class="category-label">CATEGORIES</span>
+        </div>
+        <div class="right-box">
+            <div class="header-title">
+                <h1 class="title">Tech Trends from 2020</h1>
+                <p class="subtitle">by Daniel Eckler</p>
+            </div>
+            <div class="subscribe-social">
+                    <div class="subscribe-box">
+                            <div class="input-wrapper">
+                                <img src="asset/icon/mail.svg" alt="mail" />
+                                <input type="text" placeholder="Email Address" />
+                            </div>
+                            <a class="btn-subscribe btn-primary">Subscribe</a>
+                        </div>
+                <div class="head-social">
+                    <a href="#"> <img src="asset/icon/twitter.svg" alt="twitter" /></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="category-sidebar">
+        <div class="sidebar-head">
+            <span class="category-label">CATEGORIES</span>
+            <a class="sidebar-close">
+                <span class="closebar"></span>
+            </a>
+        </div>
+        <ul class="category-list">
+            <li class="item active">
+                <a href="#">All</a>
+            </li>
+            <li class="item ">
+                <a href="#">Drones</a>
+            </li>
+            <li class="item ">
+                <a href="#">AI</a>
+            </li>
+            <li class="item ">
+                <a href="#">Transhumanism</a>
+            </li>
+            <li class="item ">
+                <a href="#">Future of Creativity</a>
+            </li>
+            <li class="item ">
+                <a href="#">Augumented Reality</a>
+            </li>
+            <li class="item ">
+                <a href="#">Superhuman</a>
+            </li>
+            <li class="item ">
+                <a href="#">Modernization</a>
+            </li>
+            <li class="item ">
+                <a href="#">Innovation</a>
+            </li>
+            <li class="item ">
+                <a href="#">Technology</a>
+            </li>
+        </ul>
+    </div>
+    <section class="body-content">
+        <a class="back-link" href="list.html">Back to list</a>
+        <div class="article-container">
+            <div class="article-banner">
+                <img src="asset/img/c1.jpg" />
+            </div>
+            <a class="article-category" href="#">Creativity</a>
+            <h1 class="article-title">
+                Drone Appendages
+            </h1>
+            <div class="article-content">
+                <p>Walgreens and a Google affiliate are testing drone deliveries that can put drugstore products on
+                    customer doorsteps minutes after being ordered.</p>
+                <p>Snacks like Goldfish Crackers or gummy bears as well as aspirin for sick kids will be delivered
+                    starting next month in Christiansburg, Virginia, by a 10-pound (4.5-kilogram) drone flying as fast
+                    as 70 miles (113 kilometers) per hour, the companies said Thursday.</p>
+                <p>Customers will be able to order from a list of more than 100 items that includes individual consumer
+                    goods and packages of products to help with things like coughs and colds, but not prescriptions.
+                    They will place their order through a Wing app and then get delivery anywhere from five to 10
+                    minutes afterward.
+
+                    A drone capable of making a 12-mile (19-kilometer) round trip will fly to the delivery site, hover
+                    and use a winch system to lower the package to the ground and leave it there. The drone will be run
+                    by Wing Aviation LLC, a subsidiary of Google parent Alphabet Inc.
+
+                    “We’re taking a 10-pound aircraft to move a three-pound package through the sky,” Wing CEO James
+                    Ryan Burgess said. “It’s very light, very efficient.”</p>
+                <p>Drone deliveries in the United States are still largely in early testing. Google announced in April
+                    that Wing received federal approval to make commercial drone deliveries. It marked the first time a
+                    company has gotten a federal drone delivery certification.
+
+                    Online retail giant Amazon said in June that it plans to use self-piloted drones to deliver packages
+                    to shoppers’ homes in the coming months.
+
+                    United Parcel Service Inc. also said in July that it was setting up a subsidiary to expand its drone
+                    deliveries, which are limited to transporting medical samples at a group of hospitals in Raleigh,
+                    North Carolina.
+
+                    Burgess told reporters Thursday that Wing and Walgreens had no timeframe for how long this test
+                    would take or when consumers might expect widespread drone use.
+
+                    “I think we still have a ways to go before it’s the norm in our transportation network,” he said.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p class="copyright">© 2019, All Rights Reserved</p>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.category-trigger').click(function () {
+            $('.category-sidebar').addClass('show');
+            $('.body-content').addClass('show-sidebar');
+            $('.footer').addClass('show-sidebar');
+        });
+        $('.sidebar-close').click(function () {
+            $('.category-sidebar').removeClass('show');
+            $('.body-content').removeClass('show-sidebar');
+        });
+    });
+</script>
+
+</html>

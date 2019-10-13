@@ -1,0 +1,32 @@
+.quantity-box {
+    display: flex;
+    border: 1px solid $black40;
+    max-width: 110px;
+    border-radius: 2px;
+    .qty-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 33px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-align: center;
+        ion-icon {
+            transform: translateY(0px);
+        }
+        &:hover {
+            background: #f5f5f5;
+        }
+    }
+    .qty-value {
+        width: 50px;
+        height: 33px;
+        text-align: center;
+        border-left: 1px solid $black40;
+        border-right: 1px solid $black40;
+        border-top: none;
+        border-bottom: none;
+        background: #fff;
+    }
+}

@@ -1,0 +1,150 @@
+.owl-nav {
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav-slider {
+    .owl-nav {
+        top: -80px;
+        right: 0;
+    }
+
+    .owl-prev {
+        transform: translateX(-5px);
+    }
+
+    .owl-next {
+        transform: translateX(0px);
+    }
+}
+
+.owl-prev,
+.owl-next {
+    background: transparent;
+
+    span {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        border-radius: 2px;
+        // background: rgba(255, 255, 255, 0.95);
+        background: transparent;
+    }
+
+    .nav-icon {
+        height: 14px;
+    }
+}
+
+.white-icon {
+    display: none;
+}
+.cat-list {
+    .owl-prev {
+        background: rgba($color: #fff, $alpha: 0.5);
+        transform: translateX(-20px);
+    }
+
+    .owl-next {
+        background: rgba($color: #fff, $alpha: 0.5);
+        transform: translateX(-60px);
+    }
+}
+
+@media (min-width: $desktop) {
+    .owl-carousel {
+        &:not(.top-nav-slider) {
+            
+            .owl-nav {
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+            }
+            &:not(.cat-list){
+                .owl-prev {
+                    transform: translateX(-70px);
+                }
+    
+                .owl-next {
+                    transform: translateX(70px);
+                }
+            }
+
+          
+        }
+    }
+
+}
+
+@media (max-width: $tablet) {
+    .owl-carousel {
+        &:not(.top-nav-slider) {
+            .owl-nav {
+                bottom: -20px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+
+            .owl-prev {
+                transform: translateX(-10px);
+            }
+
+            .owl-next {
+                transform: translateX(10px);
+            }
+        }
+    }
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    .owl-dot {
+        margin: 2px;
+        background: transparent;
+
+        span {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.2);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+    }
+
+    .owl-dot.active {
+        span {
+            background: rgba(0, 0, 0, 0.7);
+
+        }
+    }
+}
+
+.flash-sale-slider {
+    .owl-nav{
+        top: 40% !important;
+    }
+    .owl-prev,
+    .owl-next {
+        span {
+            border-radius: 50%;
+            border-color: #fff;
+        }
+    }
+
+    .white-icon {
+        display: block;
+    }
+
+    .black-icon {
+        display: none;
+    }
+}
