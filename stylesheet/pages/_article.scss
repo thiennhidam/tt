@@ -1,7 +1,9 @@
 .body-content {
     position: relative;
 }
-
+.article-banner {
+    text-align: center;
+}
 @media (min-width: $desktop){
     .back-link {
         position: absolute;

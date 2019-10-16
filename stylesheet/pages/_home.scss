@@ -14,12 +14,14 @@
 .__show {
     display: block !important;
 }
-@media (min-width: $tablet){
-    .popup-section {
+
+@media (min-width: $tablet) {
+    .tech-trend-modal {
         .head-title {
             font-size: 85px;
             line-height: 75px;
         }
+
         .head-subtitle {
             font-size: 28px;
             line-height: 42px;
@@ -27,12 +29,14 @@
         }
     }
 }
-@media (max-width: $tablet){
-    .popup-section {
+
+@media (max-width: $tablet) {
+    .tech-trend-modal {
         .head-title {
             font-size: 35px;
             line-height: 30px;
         }
+
         .head-subtitle {
             font-size: 18px;
             line-height: 22px;
@@ -40,18 +44,21 @@
         }
     }
 }
-.popup-section {
-    .section-content {
+
+.tech-trend-modal {
+    .modal-content {
         position: relative;
         width: 100%;
         height: 100vh;
+        max-width: unset;;
         background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: center;
-        .head-social{
+
+        .head-social {
             position: absolute;
             top: 30px;
             right: 40px;
@@ -63,31 +70,36 @@
     }
 
     .head-subtitle {
-       
+
         margin-bottom: 50px;
     }
 
 }
-@media (min-width: $tablet){
+
+@media (min-width: $tablet) {
     .subscribe-box {
         &:not(.full-width) {
             width: 620px;
-    
+
             .input-wrapper {
                 width: calc(100% - 195px);
             }
         }
     }
 }
-@media (max-width: $tablet){
-    .subscribe-box{
+
+@media (max-width: $tablet) {
+    .subscribe-box {
         flex-direction: column;
         width: 90%;
+
         input {
             flex-basis: 100%;
             width: 100%;
         }
+
         .btn-subscribe {
+
             width: 100%;
             margin-top: 20px;
 
@@ -98,6 +110,7 @@
 .subscribe-box {
     display: flex;
     justify-content: space-between;
+
     .input-wrapper {
         display: flex;
         align-items: center;
@@ -111,6 +124,10 @@
         input {
             width: 85%;
         }
+    }
+
+    .btn-subscribe {
+        border: 1px solid $primary-color;
     }
 
     // &:not(.full-width) {
@@ -185,17 +202,19 @@
     margin-top: 130px;
 }
 
-@media (min-width: $desktop){
+@media (min-width: $desktop) {
     .article-list {
         padding: 50px 60px;
     }
 }
-@media (max-width: $desktop) and (min-width: $tablet){
+
+@media (max-width: $desktop) and (min-width: $tablet) {
     .article-list {
         padding: 30px 20px;
     }
 }
-@media (max-width: $tablet){
+
+@media (max-width: $tablet) {
     .article-list {
         padding: 30px 0px;
     }
@@ -207,10 +226,11 @@
     grid-template-columns: repeat(12, 1fr);
 }
 
-@media (min-width: $desktop){
+@media (min-width: $desktop) {
     .article {
         grid-column: span 3 / auto;
         margin: 30px 40px;
+
         .title {
             margin: 30px 0 20px 0;
         }
@@ -221,16 +241,18 @@
     .article {
         grid-column: span 4 / auto;
         margin: 20px 20px;
+
         .title {
             margin: 10px 0 1px 0;
         }
     }
 }
 
-@media (max-width: $tablet){
+@media (max-width: $tablet) {
     .article {
         grid-column: span 12 / auto;
         margin: 10px 30px;
+
         .title {
             margin: 20px 0 10px 0;
         }
@@ -239,6 +261,7 @@
 
 .article {
     text-align: center;
+
     .title {
         display: inline-block;
         font-size: 24px;
@@ -246,6 +269,7 @@
         font-weight: bold;
         max-width: 240px;
     }
+
     .subtitle {
         color: $link-color;
         font-size: 15px;
@@ -256,31 +280,37 @@
     display: flex;
     align-items: center;
     width: 100%;
+
     img {
         width: 100%;
         max-height: 280px;
     }
 }
-@media (max-width: $tablet){
+
+@media (max-width: $tablet) {
     .article-img {
         height: 280px;
+
         img {
             max-height: 280px;
         }
     }
 }
 
-@media (min-width: $tablet) and (max-width: $desktop){
+@media (min-width: $tablet) and (max-width: $desktop) {
     .article-img {
         height: 180px;
+
         img {
             max-height: 180px;
         }
     }
 }
-@media (min-width: $desktop){
+
+@media (min-width: $desktop) {
     .article-img {
         height: 280px;
+
         img {
             max-height: 280px;
         }
@@ -334,8 +364,9 @@ $sidebar-width: 300px;
     width: 24px;
     padding-left: 15px;
 
-   
+
 }
+
 .closebar {
     display: inline-block;
     width: 1.8px;
@@ -355,10 +386,11 @@ $sidebar-width: 300px;
         left: 0;
     }
 }
+
 .category-list {
     padding: 20px 0;
 
-    .item {
+    .menu-item {
         padding: 18px 30px;
 
         a {
@@ -366,7 +398,7 @@ $sidebar-width: 300px;
             padding: 5px 10px;
         }
 
-        &.active {
+        &.current-menu-item {
             a {
                 background: $link-color;
                 color: $secondary-color;
@@ -377,7 +409,7 @@ $sidebar-width: 300px;
 }
 
 .join-modal {
-   
+
     .close-action {
         width: 28px;
         top: 20px;
@@ -388,18 +420,21 @@ $sidebar-width: 300px;
         cursor: pointer;
     }
 }
-@media (min-width: $tablet){
+
+@media (min-width: $tablet) {
     .join-modal {
         .modal-body {
             padding: 60px 100px;
         }
     }
 }
-@media (max-width: $tablet){
-    .join-modal{
+
+@media (max-width: $tablet) {
+    .join-modal {
         .modal-body {
             padding: 60px 20px;
         }
+
         .modal-content {
             width: 100%;
             height: 100%;
@@ -427,5 +462,21 @@ $sidebar-width: 300px;
 
     .item {
         padding: 10px 0;
+    }
+}
+
+.subscribed-modal {
+    .modal-content {
+        padding: 40px 20px 20px 20px;
+        text-align: center;
+
+        .msg {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+        }
     }
 }

@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <section class="popup-section">
+    <h1>Try to leave the page!</h1>
+    <!-- <section class="popup-section">
         <div class="section-content">
                 <div class="head-social">
                         <a href="#"> <img src="asset/icon/twitter.svg" alt="twitter"/></a>
@@ -29,11 +30,35 @@
             <p class="head-author">Curated by Daniel Eckler.</p>
            
         </div>
-    </section>
+    </section> -->
+    <div class="tech-trend-modal modal">
+        <div class="modal-content">
+                <div class="head-social">
+                        <a href="#"> <img src="asset/icon/twitter.svg" alt="twitter"/></a>
+                </div>
+            <h1 class="head-title">This Week in <br/> Creative Technology 🤖</h1>
+            <p class="head-subtitle">Join 5000+ subscribers for weekly updates on creative innovation in AI, AR, VR, IoT, Blockchain, & more. See a sample.</p>
+            <div class="subscribe-box">
+                    <div class="input-wrapper">
+                            <img src="asset/icon/mail.svg" alt="mail" />
+                            <input type="text" placeholder="Email Address" />
+                    </div>
+                    <a class="btn-subscribe btn-primary">Subscribe</a>
+                </div>
+            <p class="head-author">Curated by Daniel Eckler.</p>
+        </div>
+    </div>
     <footer>
         <p class="copyright">© 2019, All Rights Reserved</p>
     </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
+<script src="plugins/jquery.exitintent.min.js"></script>
+<script>
+$.exitIntent('enable');
+        $(document).bind('exitintent', function () {
+            $('.tech-trend-modal').addClass('show');
+        });
+</script>
 </html>

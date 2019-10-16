@@ -23,13 +23,13 @@
                 <p class="subtitle">by Daniel Eckler</p>
             </div>
             <div class="subscribe-social">
-                <div class="subscribe-box">
+                <form class="subscribe-box">
                     <div class="input-wrapper">
                         <img src="asset/icon/mail.svg" alt="mail" />
-                        <input type="text" placeholder="Email Address" />
+                        <input required type="email" class="subscribe-email" placeholder="Email Address" />
                     </div>
-                    <a class="btn-subscribe btn-primary">Subscribe</a>
-                </div>
+                    <button type="submit" class="btn-subscribe btn-primary">Subscribe</button>
+                </form>
                 <div class="head-social">
                     <a href="#"> <img src="asset/icon/twitter.svg" alt="twitter" /></a>
                 </div>
@@ -44,34 +44,34 @@
             </a>
         </div>
         <ul class="category-list">
-            <li class="item active">
+            <li class="menu-item current-menu-item">
                 <a href="#">All</a>
             </li>
-            <li class="item ">
+            <li class="menu-item ">
                 <a href="#">Drones</a>
             </li>
-            <li class="item ">
+            <li class="menu-item ">
                 <a href="#">AI</a>
             </li>
-            <li class="item ">
+            <li class="menu-item ">
                 <a href="#">Transhumanism</a>
             </li>
-            <li class="item ">
+            <li class="menu-item ">
                 <a href="#">Future of Creativity</a>
             </li>
-            <li class="item ">
+            <li class="menu-item ">
                 <a href="#">Augumented Reality</a>
             </li>
-            <li class="item ">
+            <li class="menu-item ">
                 <a href="#">Superhuman</a>
             </li>
-            <li class="item ">
+            <li class="menu-item ">
                 <a href="#">Modernization</a>
             </li>
-            <li class="item ">
+            <li class="menu-item ">
                 <a href="#">Innovation</a>
             </li>
-            <li class="item ">
+            <li class="menu-item ">
                 <a href="#">Technology</a>
             </li>
         </ul>
@@ -197,6 +197,18 @@
             </div>
         </div>
     </div>
+    <div class="subscribed-modal modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="modal-title">
+                    Subscribed! ✅
+                </h2>
+                <p class="msg">You will receive weekly updates from us!</p>
+                <a class="btn-primary close-modal">Close</a>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
@@ -217,6 +229,19 @@
             $('.category-sidebar').removeClass('show');
             $('.body-content').removeClass('show-sidebar');
         });
+        $(".subscribe-box").on('submit', function (e) {
+            e.preventDefault();
+            $('.subscribed-modal').addClass("show");
+        });
+        // $('.btn-subscribe').click(function () {
+        //     if ($('.subscribe-email').val() == null || $('.subscribe-email').val() == '' || $(
+        //             '.subscribe-email').val() == undefined) {
+
+        //     } else {
+        //         $('.subscribed-modal').addClass("show");
+        //     }
+
+        // });
     });
 </script>
 
