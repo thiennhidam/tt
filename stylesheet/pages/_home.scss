@@ -248,6 +248,16 @@
         }
     }
 }
+@media (min-width: $desktop) {
+    .article {
+        grid-column: span 3 / auto;
+        margin: 30px 40px;
+
+        .title {
+            margin: 30px 0 20px 0;
+        }
+    }
+}
 
 @media (min-width: $tablet) and (max-width: $desktop) {
     .article {
