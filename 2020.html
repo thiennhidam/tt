@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="NHIDTT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Trends</title>
+    <link href="asset/img/logo.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet/main.css" />
+</head>
+
+<body>
+    <section class="tech-trend-modal popup-section">
+        <div class="section-content modal-content">
+                <div class="head-social">
+                        <a href="#"> <img src="asset/icon/twitter.svg" alt="twitter"/></a>
+                </div>
+            <h1 class="head-title">This Week in <br/> Creative Technology</h1>
+            <p class="head-subtitle">Join 5000+ subscribers for weekly updates on creative innovation in AI, AR, VR, IoT, Blockchain, & more. See a sample.</p>
+            <div class="subscribe-box">
+                    <div class="input-wrapper">
+                            <img src="asset/icon/mail.svg" alt="mail" />
+                            <input type="text" placeholder="Email Address" />
+                    </div>
+                    <a class="btn-subscribe btn-primary">Subscribe</a>
+                </div>
+            <p class="head-author">Curated by Daniel Eckler.</p>
+           
+        </div>
+    </section>
+    <div id="exit-modal" class="tech-trend-modal modal yellow-bg">
+        <div class="modal-content">
+                <!-- <div class="head-social">
+                        <a href="#"> <img src="asset/icon/twitter.svg" alt="twitter"/></a>
+                </div> -->
+            <h1 class="head-title">This Week in <br/> Creative Technology 🤖</h1>
+            <p class="head-subtitle">Join 5000+ subscribers for weekly updates on creative innovation in AI, AR, VR, IoT, Blockchain, & more. <a href="https://mailchi.mp/7a5440f501de/artificial-tree-sucks-up-as-much-air-pollution-as-a-small-forest?e=[UNIQID]">See a sample</a>. </p>
+            <div class="subscribe-box">
+                    <div class="input-wrapper">
+                            <img src="asset/icon/mail.svg" alt="mail" />
+                            <input type="text" placeholder="Email Address" />
+                    </div>
+                    <a class="btn-subscribe btn-primary">Subscribe</a>
+                </div>
+            <a href="https://danieleckler.com" class="head-author">Curated by Daniel Eckler.</a>
+        </div>
+    </div>
+    <!-- <footer>
+        <p class="copyright">© 2019, All Rights Reserved</p>
+    </footer> -->
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="plugins/jquery.exitintent.min.js"></script>
+<script>
+$.exitIntent('enable');
+        $(document).bind('exitintent', function () {
+            $('#exit-modal').addClass('show');
+        });
+</script>
+</html>
