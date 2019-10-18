@@ -543,7 +543,7 @@ input {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1366px) {
   .col-6, .col-65, .col-7, .col-75, .col-8, .col-9, .col-85 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -579,7 +579,7 @@ input {
   height: 24px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1366px) {
   .header {
     padding: 0 30px;
   }
@@ -588,7 +588,7 @@ input {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .header {
     padding: 0 50px;
   }
@@ -625,7 +625,7 @@ input {
   left: 0;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .hamburger-menu {
     width: 47px;
   }
@@ -634,7 +634,7 @@ input {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1366px) {
   .hamburger-menu {
     width: 37px;
   }
@@ -654,7 +654,7 @@ input {
           align-items: center;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .category-trigger {
     width: 250px;
     border-right: 1px solid #242424;
@@ -676,7 +676,7 @@ input {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1366px) {
   .header .subscribe-box {
     display: none;
   }
@@ -728,7 +728,7 @@ input {
   font-size: 12px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .copyright {
     position: fixed;
     right: -60px;
@@ -739,7 +739,7 @@ input {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1366px) {
   .copyright {
     text-align: center;
     margin: 0px 40px;
@@ -996,7 +996,7 @@ input {
   width: 100%;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .modal-content {
     width: 55%;
     min-width: 400px;
@@ -1148,6 +1148,18 @@ input {
   }
 }
 
+@media (min-width: 765px) and (max-width: 1500px) {
+  .subscribe-box.header-subscribe {
+    width: 550px !important;
+  }
+  .subscribe-box.header-subscribe .input-wrapper {
+    width: calc(100% - 180px);
+  }
+  .subscribe-box.header-subscribe .btn-subscribe {
+    width: 180px;
+  }
+}
+
 @media (max-width: 765px) {
   .subscribe-box {
     -webkit-box-orient: vertical;
@@ -1254,13 +1266,13 @@ input {
   margin-top: 130px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .article-list {
     padding: 50px 60px;
   }
 }
 
-@media (max-width: 1400px) and (min-width: 765px) {
+@media (max-width: 1366px) and (min-width: 765px) {
   .article-list {
     padding: 30px 20px;
   }
@@ -1279,33 +1291,40 @@ input {
       grid-template-columns: repeat(12, 1fr);
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   .article {
     grid-column: span 3 / auto;
-    margin: 30px 40px;
   }
   .article .title {
     margin: 30px 0 20px 0;
   }
 }
 
-@media (min-width: 1400px) {
-  .article {
-    grid-column: span 3 / auto;
-    margin: 30px 40px;
-  }
-  .article .title {
-    margin: 30px 0 20px 0;
-  }
-}
-
-@media (min-width: 765px) and (max-width: 1400px) {
+@media (min-width: 1366px) and (max-width: 1500px) {
   .article {
     grid-column: span 4 / auto;
-    margin: 20px 20px;
   }
   .article .title {
-    margin: 10px 0 1px 0;
+    margin: 30px 0 20px 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .article .title {
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 1366px) {
+  .article {
+    grid-column: span 4 / auto;
+    margin: 20px 25px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .article {
+    margin: 30px 40px;
   }
 }
 
@@ -1313,9 +1332,6 @@ input {
   .article {
     grid-column: span 12 / auto;
     margin: 10px 30px;
-  }
-  .article .title {
-    margin: 20px 0 10px 0;
   }
 }
 
@@ -1358,16 +1374,16 @@ input {
   }
 }
 
-@media (min-width: 765px) and (max-width: 1400px) {
+@media (min-width: 765px) and (max-width: 900px) {
   .article-img {
-    height: 180px;
+    height: 200px;
   }
   .article-img img {
-    max-height: 180px;
+    max-height: 200px;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 900px) {
   .article-img {
     height: 280px;
   }
@@ -1554,7 +1570,7 @@ input {
   text-align: center;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .back-link {
     position: absolute;
     left: 50px;
@@ -1572,7 +1588,7 @@ input {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1366px) {
   .back-link {
     position: absolute;
     left: 50px;
